@@ -1,0 +1,12 @@
+
+syntax = "proto3";//定义版本
+
+option java_package = "coderead.netty.protobuf"; //定义生成的文件包路径
+option java_outer_classname = "demo1"; //定义序列化的包装类名 缺失则给一个默认值
+
+
+message demo { //定义需要序列化的类
+  string query = 1;
+  int32 page_number = 2;
+  int32 result_per_page = 3;
+}

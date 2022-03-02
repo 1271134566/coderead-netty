@@ -1,0 +1,20 @@
+syntax ="proto3";
+option  java_outer_classname="TransferMessage";
+
+message Transfer{
+  // 序列化方式
+  // 是否为心跳事件
+  // 状态
+  // 是不是一个请求
+  // id
+  // 对象
+  SerializableType type=1;
+  bytes body=2;
+}
+enum SerializableType{
+  java=0;
+  json=1;
+  xml=2;
+  hessian2=3;
+}
+

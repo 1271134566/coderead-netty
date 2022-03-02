@@ -1,0 +1,15 @@
+syntax ="proto3";
+
+option java_outer_classname="UserMessage";
+
+message User{
+  int32 id=1;
+  string name=2;
+}
+
+enum serializableType{
+  java=0;
+  json=1;
+  xml=2;
+  hessian2=3
+}
